@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PrimeiroExercicioComponent } from './primeiro-exercicio/primeiro-exercicio.component';
+import { FormsModule } from '@angular/forms';
+import { SegundoExercicioComponent } from './segundo-exercicio/segundo-exercicio.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PrimeiroExercicioComponent,
+    SegundoExercicioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
