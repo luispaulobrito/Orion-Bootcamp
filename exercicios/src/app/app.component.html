@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Orion Bootcamp - Alpha Orionis</a>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light flex-column col-2" style="height: calc(100vh - 57px);">
+          <div class="collapse navbar-collapse h-100 align-items-start" id="sidebar">
+              <ul class="navbar-nav flex-column">
+                  <li class="nav-item">
+                      <a class="nav-link menu-lateral" routerLink="primeiro-exercicio">Exercício 1</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link menu-lateral" routerLink="segundo-exercicio">Exercício 2</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link menu-lateral" routerLink="terceiro-exercicio">Exercício 3</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+
+      <div class="col-10">
+          <div class="container-fluid">
+              <router-outlet></router-outlet>
+          </div>
+      </div>
+      
+  </div>
+</div>

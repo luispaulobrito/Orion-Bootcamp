@@ -1,0 +1,18 @@
+<h2 class="mt-3">Exercício 1</h2>
+<h5>1 - Criar uma função que retorne a quantidade de vogais da palavra passada.</h5>
+<div>
+  <div class="form-group">
+    <p>a) Dar um exemplo de uso com uma palavra recebida via parâmetro da função.</p>
+    <div>
+      <p>Palavra enviada: New Rizon</p>
+      <p>Quantidade de vogais: {{ contarVogais('New Rizon') }}</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <p>b) Dar um exemplo de uso com uma palavra recebida via input no formulário.</p>
+    <input type="text" class="form-control" id="palavra" name="palavra" placeholder="Digite a palavra" [(ngModel)]="palavra" (input)="atualizarContagem()">
+    <div>
+      <p class="mt-2">Quantidade de vogais: {{ vogais }}</p>
+    </div>
+  </div>
+</div>
