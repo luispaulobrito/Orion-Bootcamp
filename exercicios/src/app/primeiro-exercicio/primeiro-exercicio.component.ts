@@ -10,11 +10,11 @@ export class PrimeiroExercicioComponent {
   vogais: number = 0;
 
   contarVogais(palavra: string): number {
-    const vogais = palavra.toLowerCase().match(/[aeiou]/g);
+    const vogais = palavra.toLowerCase().match(/[aeiouáàâãéêíóôõúü]/g);
     return vogais ? vogais.length : 0;
   }
 
-  atualizarContagem() {
+  atualizarContagem(): void {
     this.vogais = this.contarVogais(this.palavra);
   }
 }
