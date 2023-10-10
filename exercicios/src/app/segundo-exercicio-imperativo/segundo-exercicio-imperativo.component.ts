@@ -65,9 +65,9 @@ export class SegundoExercicioImperativoComponent {
   alterarPessoa(id: number, novoValor: string, tipoAlteracao: string): void {
     const pessoa = this.findItemById(id);
     if (pessoa) {
-      if (tipoAlteracao === 'bio') {
+      if (tipoAlteracao === TipoAlteracaoEnum.BIO) {
         pessoa.bio = novoValor;
-      } else if (tipoAlteracao === 'nome') {
+      } else if (tipoAlteracao === TipoAlteracaoEnum.NOME) {
         pessoa.nome = novoValor;
       }
       this.mensagemAlteracao = `${tipoAlteracao.charAt(0).toUpperCase() + tipoAlteracao.slice(1)} do id ${id} alterado.`;
