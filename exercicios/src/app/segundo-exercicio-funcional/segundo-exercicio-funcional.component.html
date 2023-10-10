@@ -1,0 +1,47 @@
+<h2 class="mt-3">Exercício 2 - Funcional</h2>
+<h4>Dado o array:</h4>
+
+<div>
+  <div class="form-group row align-items-center">
+    <h4>a) Crie uma função que retorne a bio do id passado</h4>
+    <p>Bio do ID 2: {{ buscarBio(2) }}</p>
+  </div>
+
+  <div class="form-group row align-items-center">
+    <h4>b) Crie uma função que retorne o nome do id passado</h4>
+    <p>Nome do ID 3: {{ buscarNome(3) }}</p>
+  </div>
+ 
+  <div class="form-group row align-items-center">
+    <h4>c) Crie uma função que apague um item da lista a partir de um id passado</h4>
+        <p>ID 4 removido {{ removerPessoa(4) }}</p>
+    <div class="mt-4">
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Bio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pessoa of lista">
+            <td>{{ pessoa.id }}</td>
+            <td>{{ pessoa.nome }}</td>
+            <td>{{ pessoa.bio }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="form-group row align-items-center">
+    <h4>d) Crie uma função que altere a bio ou o name a partir de um id passado</h4>
+    <p>Nome ID 1 alterado {{ alterarPessoa(1, 'Novo nome de Ada', '') }}</p>
+    <p>Bio ID 2 alterado {{ alterarPessoa(2, '', 'Nova bio para Alan Turing') }}</p>
+  </div>
+  
+   <div class="form-group">
+    <h4>e) Demonstre todas as funções com o paradigma funcional e com o imperativo</h4>
+  </div>
+</div>
