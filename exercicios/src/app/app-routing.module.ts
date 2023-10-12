@@ -7,7 +7,7 @@ import { SegundoExercicioFuncionalComponent } from './segundo-exercicio-funciona
 const routes: Routes = [
   { path: 'primeiro-exercicio', component: PrimeiroExercicioComponent},
   { path: 'segundo-exercicio-funcional', component: SegundoExercicioFuncionalComponent},
-  { path: 'segundo-exercicio-imperativo', component: SegundoExercicioImperativoComponent}
+  { path: 'segundo-exercicio-imperativo', component: SegundoExercicioImperativoComponent},
 ];
 
 @NgModule({

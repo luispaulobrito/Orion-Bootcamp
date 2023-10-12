@@ -38,22 +38,27 @@ export class SegundoExercicioImperativoComponent {
   }
 
   private findItemById(id: number): Pessoa | undefined {
-    return this.lista.find(item => item.id === id);
+    for (let i = 0; i < this.lista.length; i++) {
+      if (this.lista[i].id === id) {
+        return this.lista[i];
+      }
+    }
+    return;
   }
   
+  
   buscarBio(id: number): void {
-    const item = this.findItemById(id);
+    const item: Pessoa | undefined = this.findItemById(id);
     this.bio = item ? item.bio : 'Digite outro número';
   }
   
   buscarNome(id: number): void {
-    const item = this.findItemById(id);
+    const item: Pessoa | undefined = this.findItemById(id);
     this.nome = item ? item.nome : 'Digite outro número';
   }
   
   removerPessoa(id: number): void {
-    const item = this.findItemById(id);
-  
+    const item: Pessoa | undefined = this.findItemById(id);
     if (item) {
       this.lista = this.lista.filter(item => item.id !== id);
       this.itemRemovido = `Id ${id} removido com sucesso`;
@@ -63,7 +68,7 @@ export class SegundoExercicioImperativoComponent {
   }
   
   alterarPessoa(id: number, novoValor: string, tipoAlteracao: string): void {
-    const pessoa = this.findItemById(id);
+    const pessoa: Pessoa | undefined = this.findItemById(id);
     if (pessoa) {
       if (tipoAlteracao === TipoAlteracaoEnum.BIO) {
         pessoa.bio = novoValor;

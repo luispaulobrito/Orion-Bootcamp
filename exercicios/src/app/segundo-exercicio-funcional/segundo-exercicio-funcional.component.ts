@@ -32,21 +32,22 @@ export class SegundoExercicioFuncionalComponent {
   }
   
   buscarBio(id: number): string {
-    const item = this.findItemById(id);
+    const item: Pessoa | undefined = this.findItemById(id);
     return item ? item.bio : 'Digite outro número';
   }
   
   buscarNome(id: number): string {
-    const item = this.findItemById(id);
+    const item: Pessoa | undefined = this.findItemById(id);
     return item ? item.nome : 'Digite outro número';
   }
+  
   
   removerPessoa(id: number): void {
     this.lista = this.lista.filter(item => item.id !== id);
   }
   
   alterarPessoa(id: number, novoNome: string, novaBio: string): void {
-    const pessoa = this.findItemById(id);
+    const pessoa: Pessoa | undefined = this.findItemById(id);
     if (pessoa) {
       if (this.isStringValid(novoNome)) {
         pessoa.nome = novoNome;
@@ -57,7 +58,7 @@ export class SegundoExercicioFuncionalComponent {
     }
   }
   
-  isStringValid(value: string){
+  isStringValid(value: string): boolean{
     return value !== null && value?.trim() !== '';
   }
 }
