@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { PrimeiroExercicioComponent } from './primeiro-exercicio/primeiro-exercicio.component';
 import { FormsModule } from '@angular/forms';
 import { SegundoExercicioFuncionalComponent } from './segundo-exercicio-funcional/segundo-exercicio-funcional.component';
+import { TerceiroExercicioComponent } from './terceiro-exercicio/terceiro-exercicio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrimeiroExercicioComponent,
     SegundoExercicioFuncionalComponent,
-    SegundoExercicioImperativoComponent
+    SegundoExercicioImperativoComponent,
+    TerceiroExercicioComponent
   ],
   imports: [
     BrowserModule,
