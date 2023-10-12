@@ -8,7 +8,7 @@ https://orion-bootcamp.netlify.app/
 
 ## Layout Web
 
-![Certificado de Conclusão](https://github.com/luispaulobrito/Orion-Bootcamp/blob/main/tela.png)
+![Layout Web](https://github.com/luispaulobrito/Orion-Bootcamp/blob/feature/exercicio-3/assets/tela.png)
 
 ## Development server
 
