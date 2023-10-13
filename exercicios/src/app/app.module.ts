@@ -1,8 +1,9 @@
 import { SegundoExercicioImperativoComponent } from './segundo-exercicio-imperativo/segundo-exercicio-imperativo.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { PrimeiroExercicioComponent } from './primeiro-exercicio/primeiro-exercicio.component';
 import { FormsModule } from '@angular/forms';
@@ -20,7 +21,8 @@ import { TerceiroExercicioComponent } from './terceiro-exercicio/terceiro-exerci
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
