@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'exercicios';
+
+  linksVisiveis: boolean = false;
+
+  toggleLinks() {
+    this.linksVisiveis = !this.linksVisiveis;
+  }
 }

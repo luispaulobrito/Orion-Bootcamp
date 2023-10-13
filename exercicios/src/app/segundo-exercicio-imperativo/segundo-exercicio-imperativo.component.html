@@ -1,0 +1,83 @@
+<h2 class="mt-3">Exercício 2 - Imperativo</h2>
+<h4>Dado o array:</h4>
+
+<div>
+  <div class="form-group row align-items-center">
+    <h4>a) Crie uma função que retorne a bio do id passado</h4>
+    <h5>Imperativo</h5>
+    <div class="col-sm-4">
+      <input type="number" class="form-control" [(ngModel)]="idBuscaBio" placeholder="Digite o id">
+    </div>
+    <div class="col-sm-2">
+      <button type="submit" class="btn btn-primary" (click)="buscarBio(idBuscaBio)">Buscar Bio</button>
+    </div>
+    <p>Bio: {{ bio }}</p>
+  </div>
+
+  <div class="form-group row align-items-center">
+    <h4>b) Crie uma função que retorne o nome do id passado</h4>
+    <h5>Imperativo</h5>
+    <div class="col-sm-4">
+      <input type="number" class="form-control"  [(ngModel)]="idBuscaNome" placeholder="Digite o id">
+    </div>
+    <div class="col-sm-2">
+      <button class="btn btn-primary" (click)="buscarNome(idBuscaNome)">Buscar Nome</button>
+    </div>
+    <p>Nome: {{ nome }}</p>
+  </div>
+ 
+  <div class="form-group row align-items-center">
+    <h4>c) Crie uma função que apague um item da lista a partir de um id passado</h4>
+        <h5>Imperativo</h5>
+        <div class="col-sm-4">
+          <input type="number" class="form-control"  [(ngModel)]="idRemovePessoa" placeholder="Digite o id">
+        </div>
+        <div class="col-sm-2">
+          <button class="btn btn-primary" (click)="removerPessoa(idRemovePessoa)">Remover Pessoa</button>
+        </div>
+    <p>{{ itemRemovido }}</p>
+
+    <div class="mt-4">
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Bio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pessoa of lista">
+            <td>{{ pessoa.id }}</td>
+            <td>{{ pessoa.nome }}</td>
+            <td>{{ pessoa.bio }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="form-group row align-items-center">
+    <h4>d) Crie uma função que altere a bio ou o name a partir de um id passado</h4>
+    <div class="col-sm-2">
+      <input type="number" class="form-control" [(ngModel)]="idAlteracao" placeholder="Digite o id">
+    </div>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" [(ngModel)]="novoValor" placeholder="Digite o novo valor">
+    </div>
+    <div class="col-sm-2">
+        <select class="form-control" [(ngModel)]="tipoAlteracao">
+            <option [value]="TipoAlteracaoEnum.BIO">Bio</option>
+            <option [value]="TipoAlteracaoEnum.NOME">Nome</option>
+          </select>          
+    </div>
+    <div class="col-sm-2">
+      <button class="btn btn-primary" (click)="alterarPessoa(idAlteracao, novoValor, tipoAlteracao)">Alterar</button>
+    </div>
+    <p>{{ mensagemAlteracao }}</p>
+  </div>
+
+  <div class="form-group">
+    <h4>e) Demonstre todas as funções com o paradigma funcional e com o imperativo</h4>
+  </div>
+</div>
