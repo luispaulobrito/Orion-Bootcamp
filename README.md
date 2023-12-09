@@ -3,6 +3,10 @@
 </div>
 <h1 align="center">Orion Bootcamp</h1>
 
+O Orion Bootcamp foi um programa de treinamento realizado pela New Rizon no período de 06/10/23 à 11/12/23. Foi um programa de estudos em desenvolvimento com trilhas para desenvolvimento frontend, backend e product owner. O programa apresentou palestras, desafios práticos e mentorias. 
+
+Nesse Bootcamp segui a trilha de desenvolvimento frontend, e junto com o squad que participei desenvolvemos uma aplicação responsiva em Angular que consome uma API em Node e visa fornecer acesso à meteorologia de Marte.
+
 <h3 align="center">
 ⚙️ Tecnologias utilizadas
 
@@ -18,3 +22,26 @@
 ## Projetos / Desafios de Código
 
 - [Exercício Primeira Semana](https://github.com/luispaulobrito/Orion-Bootcamp/tree/develop/exercicios)
+- [Projeto Explorador Orion - Front](https://github.com/luispaulobrito/orion-bootcamp-front-alpha-orionis)
+- [Projeto Explorador Orion - Back](https://github.com/luispaulobrito/orion-bootcamp-back-alpha-orionis)
+
+## Resultado do projeto desenvolvido
+
+![Projeto Explorador Orion](https://github.com/luispaulobrito/Orion-Bootcamp/blob/develop/assets/explorador-orion.gif)
+
+## Palestras
+
+- Git e Gitflow na prática.
+- Comunicação: Palavras que mudam o jogo.
+- Sua carreira é sua, não terceirize.
+- Conhecendo o Ágil.
+- Boas práticas em programação.
+- Lifelong learning.
+- Empreendedorismo aplicado à carreira tech.
+- Tempo: Potencialize Sua Produtividade.
+- Customer Development.
+- Ética Profissional e Trabalho Remoto.
+- Me formei! E agora?
+
+## Conclusão do Bootcamp: 11/12/2023
+![Certificado de Conclusão]()
