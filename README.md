@@ -17,6 +17,7 @@ Nesse Bootcamp segui a trilha de desenvolvimento frontend, e junto com o squad q
 <img src="https://img.shields.io/badge/typescript-%231572B6.svg?style=for-the-badge&logo=typescript&logoColor=white"/>
 <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
 <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/docker-%231572B6.svg?style=for-the-badge&logo=docker&logoColor=white"/>
 </h3>
 
 ## Projetos / Desafios de Código
