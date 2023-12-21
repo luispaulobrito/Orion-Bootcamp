@@ -28,7 +28,14 @@ Nesse Bootcamp segui a trilha de desenvolvimento frontend, e junto com o squad q
 
 ## Resultado do projeto desenvolvido
 
+### Layout Web
+
 ![Projeto Explorador Orion](https://github.com/luispaulobrito/Orion-Bootcamp/blob/develop/assets/explorador-orion.gif)
+
+
+### Layout Mobile
+
+![Projeto Explorador Orion](https://github.com/luispaulobrito/Orion-Bootcamp/blob/develop/assets/explorador-orion-mobile.gif)
 
 ## Palestras
 
